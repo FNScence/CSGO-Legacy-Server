@@ -7,23 +7,13 @@ Players will be able to join from either the new [standalone CS:GO Legacy branch
 > **Need help?** > Join the **CS AFAP DISCORD SERVER** [HERE](https://discord.gg/FdRTp3XaCG) and feel free to ask in the `#help` channel.
 
 ## Table of Contents
+* [Mods & Plugins]()
 * [Screenshots](https://github.com/FNScence/CSGO-Legacy-Server/tree/main?tab=readme-ov-file#screenshots)
-* [Mods & Plugins](#mods--plugins)
 * [Maps](#maps)
 * [Installation](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#installation)
 * [Administration](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#administration)
 * [Useful configs and commands](https://github.com/FNScence/CSGO-Legacy-Server/blob/main/README.md#useful-configs-and-commands)
 * [Known Issues](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#known-issues)
-
-
-## Screenshots
-![1v1 on aim_redline](https://github.com/user-attachments/assets/42360be1-e400-42a6-97f9-4661497eb484)
-↑ Use any skin, unlimited graffiti and play your favorite maps of the CS:GO era. Silenced weapons are supported even without inventory. 
-
-![1v1 on aim_redline](https://github.com/user-attachments/assets/3ef7730f-5a7e-4bc1-be78-004e18339e31)
-↑ Challenge your friend on aim_redline like it's 2015 again
-
-
 
 ## Mods & Plugins
 * **NoLobbyReservation:** Requirement for players to be able to join.
@@ -34,6 +24,28 @@ Players will be able to join from either the new [standalone CS:GO Legacy branch
 * **SourceMod:** Dependency.
 * **MetaMod:** Dependency.
 * **PTaH:** Dependency.
+
+## Screenshots
+![Dust2](https://github.com/user-attachments/assets/79094c78-4bd5-4868-b747-043c5c076995)
+↑ AWP like you are prime fnatic JW ...
+
+![Inferno](https://github.com/user-attachments/assets/2cdea592-4128-4000-a8b2-358a7db4ad97)
+... or hold banana like NiP Friberg himself.
+
+![Skins, graffiti and old maps](https://github.com/user-attachments/assets/42360be1-e400-42a6-97f9-4661497eb484)
+↑ Use any skin, unlimited graffiti and play your favorite maps of the CS:GO era. Silenced weapons are supported even without inventory.
+
+![PugSetup and zoo](https://github.com/user-attachments/assets/e1361c0d-c29b-4d7a-bc86-6b9fad79ec69)
+↑ Use the PugSetup Plugin to build teams via captain role, create map vetos and play on long lost operation maps like de_zoo.
+
+![aim_redline](https://github.com/user-attachments/assets/3ef7730f-5a7e-4bc1-be78-004e18339e31)
+↑ Challenge your friend on aim_redline like it's 2015 again
+
+![Wingman](https://github.com/user-attachments/assets/9d61ba19-fd6c-4de4-856f-c0863e9ee207)
+↑ Play the best 2v2 wingman maps of CS:GO
+
+![Wingman](https://github.com/user-attachments/assets/40a85c8e-baea-46c8-b54a-ab0ba7e91aba)
+↑ Post match map vote to keep the pugs rolling
 
 ## Maps
 <details>
