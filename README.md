@@ -172,7 +172,7 @@ d. **Testing:** <br />WHILE THE SERVER IS RUNNING, go to one of these sites to t
    * [PortChecker](https://portchecker.co/)
 
 ### 6. Running the Server
-a. Start the server via the `start.bat` script we created.
+a. Start the server via the `start.bat` script.
 b. The console will print your public IP address.
 c. You and other players can connect using `connect <your_IP>` in the in-game console.
 
