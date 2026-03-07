@@ -131,7 +131,7 @@ All of the files (with their working versions and parameters) are collected for 
 ### 4. Download Maps & Graffiti
 To play non-default maps, you would normally have to go through a tedious process of downloading workshop maps and checking their compatibility (nav-file, radar issues, and crashes). Instead, use this pre-packaged folder:
 
-a. Download all the maps (competitive and wingman) via [this Google Drive link](https://drive.google.com/file/d/1TXzR00NMCwuJ4kJH5mxI8e7Kj9C-em46/view?usp=sharing).
+a. Download all the maps (competitive and wingman) via [this Google Drive link](https://drive.google.com/file/d/1TXzR00NMCwuJ4kJH5mxI8e7Kj9C-em46/view?usp=sharing).<br />
 b. Copy/place the contents of this downloaded `csgo` folder inside **BOTH** your server and game directories:
    * **Server Directory:** `C:\steamcmd\steamapps\common\Counter-Strike Global Offensive Beta - Dedicated Server\csgo\`
    * **Game Directory (New Standalone CS:GO Legacy):** `C:\Program Files (x86)\Steam\steamapps\common\csgo legacy\csgo\`
