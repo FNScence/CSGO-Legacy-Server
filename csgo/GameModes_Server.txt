@@ -1,0 +1,114 @@
+// To use this file, rename it to GameModes_Server.txt
+"GameModes_Server.txt"
+{
+    "gameTypes"
+    {
+        "classic"
+        {
+            "gameModes"
+            {
+                "competitive"
+                {
+                    "maxplayers" "10"
+                    "exec" { "exec" "s.cfg" }
+                    "mapgroupsMP" { "mg_comp" "" }
+                }
+
+                "scrimcomp2v2"
+                {
+                    "maxplayers" "4"
+                    "exec" 
+                    { 
+                        "exec" "s.cfg"
+                        "exec" "esl2on2.cfg" 
+                    }
+                    "mapgroupsMP" { "mg_wingman" "" }
+                }
+
+                "casual"
+                {
+                    "maxplayers" "30"
+                    "exec" { "exec" "server_last.cfg" }
+                    "mapgroupsMP" { "mg_comp" "" }
+                }
+            }
+        }
+
+        "gungame"
+        {
+            "gameModes"
+            {
+                "gungameprogressive"
+                {
+                    "maxplayers" "10"
+                    "exec" { "exec" "server_last.cfg" }
+                    "mapgroupsMP" { "mg_armsrace" "" }
+                }
+                "gungametrbomb"
+                {
+                    "maxplayers" "10"
+                    "exec" { "exec" "server_last.cfg" }
+                    "mapgroupsMP" { "mg_demolition" "" }
+                }
+            }
+        }
+
+        // MOVED OUTSIDE GUNGAME
+        "custom"
+        {
+            "gameModes"
+            {
+                "custom"
+                {
+                    "maxplayers" "10"
+                    "exec"
+                    {
+                        "exec" "s.cfg"
+                    }
+                    "mapgroupsMP"
+                    {
+                        "mg_aim" ""
+                    }
+                }
+            }
+        }
+    }
+
+    "mapgroups"
+    {
+        "mg_comp"
+        {
+            "name" "mg_comp"
+            "maps"
+            {
+                "de_ancient" "" "de_anubis" "" "de_inferno" "" "de_mirage" "" "de_nuke" "" 
+                "de_overpass" "" "de_vertigo" "" "de_tuscan" "" "de_dust2" "" "de_train" "" 
+                "de_cache" "" "cs_agency" "" "cs_office" "" "de_train_old" "" "de_nuke_2016" "" 
+                "de_dust2_old" "" "de_cache_legacy" "" "de_inferno_legacy" "" "de_cbble_legacy" "" 
+                "de_abbey" "" "cs_insertion2" "" "de_austria" "" "de_royal" "" "de_log" "" 
+                "de_vertigo_old" "" "de_nuke_legacy" "" "de_castle" "" "de_ruby" "" "de_zoo" "" 
+                "de_subzero" "" "de_blackgold" "" "de_tulip" "" "de_santorini" "" "de_mikla" "" 
+                "de_resort" "" "de_season" "" "cs_backalley" "" "de_bazaar" "" "cs_workout" ""
+            }
+        }
+
+        "mg_wingman"
+        {
+            "name" "mg_wingman"
+            "maps"
+            {
+                "de_elysion" "" "de_guard" "" "de_pitstop" "" "de_calavera" "" "de_ravine" "" 
+                "de_extraction_r1" "" "de_hive" "" "de_crete" "" "de_blagai" "" "de_prime" ""
+            }
+        }
+
+        "mg_aim"
+        {
+            "name" "mg_aim"
+            "maps"
+            {
+                "awp_india" "" "aim_map" "" "aim_redline" "" "aim_usp_a" ""
+            }
+        }
+    }
+}
