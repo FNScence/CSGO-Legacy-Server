@@ -1,4 +1,4 @@
-# CS:GO Legacy Server Setup
+# CS:GO Legacy Server Setup + Guide
 
 Following this guide allows you to locally host a private CS:GO Legacy server on Windows. 
 
