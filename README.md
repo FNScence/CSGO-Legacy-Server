@@ -1,211 +1,206 @@
-# CSGO Legacy Server Setup
-Following this guide allows you to locally host a private CS:GO Legacy server on Windows. <br />
-Players will be able to join from either the new [standalone CS:GO Legacy](https://store.steampowered.com/app/4465480/CounterStrikeGlobal_Offensive) or CS2's CS:GO Legacy beta branch.
-Gathering all the requirements, dependencies and dealing with compatibility issues is very time consuming, so I collected a base set-up of mods (skins, graffiti, map votes, pug setup with captain roles, etc.) as well as many older maps (e.g. de_cbble_legacy, de_train_2013, de_nuke_2016) as well as operation and wingman maps that have been part of the game once.
+# CS:GO Legacy Server Setup
 
-If any questions remain, join my discord and feel free to ask in the `#help`-channel:
-> Join the **CS AFAP DISCORD SERVER** [HERE](https://discord.gg/FdRTp3XaCG).
+Following this guide allows you to locally host a private CS:GO Legacy server on Windows. 
 
-## ReadMe Chapters
-- [Screenshots](https://github.com/FNScence/CSGO-Legacy-Server/tree/main?tab=readme-ov-file#screenshots)
-- [Mods & Maps](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#mods--maps)
-- [Installation](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#installation)
-- [Administration](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#administration)
-- [Useful configs and commands](https://github.com/FNScence/CSGO-Legacy-Server/blob/main/README.md#useful-configs-and-commands)
-- [Known Issues](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#known-issues)
+Players will be able to join from either the new [standalone CS:GO Legacy branch](https://store.steampowered.com/app/4465480/CounterStrikeGlobal_Offensive) or CS2's CS:GO Legacy beta branch. Gathering all the requirements, dependencies, and dealing with compatibility issues is very time-consuming, so I collected a base set-up of mods (skins, graffiti, map votes, PUG setup with captain roles, etc.) as well as many older maps (e.g., `de_cbble_legacy`, `de_train_2013`, `de_nuke_2016`) and operation/wingman maps that were once part of the game.
+
+> **Need help?** > Join the **CS AFAP DISCORD SERVER** [HERE](https://discord.gg/FdRTp3XaCG) and feel free to ask in the `#help` channel.
+
+## Table of Contents
+* [Screenshots](https://github.com/FNScence/CSGO-Legacy-Server/tree/main?tab=readme-ov-file#screenshots)
+* [Mods & Plugins](#mods--plugins)
+* [Maps](#maps)
+* [Installation](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#installation)
+* [Administration](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#administration)
+* [Useful configs and commands](https://github.com/FNScence/CSGO-Legacy-Server/blob/main/README.md#useful-configs-and-commands)
+* [Known Issues](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#known-issues)
 
 
 ## Screenshots
 
 
-## Mods & Maps
-#### Mods and Plugins
-- **NoLobbyReservation** (requirement for players to be able to join)
-- **CSGOEngineFix** (requirement for players to be able to join from the [new CS:GO Legacy](https://store.steampowered.com/app/4465480/CounterStrikeGlobal_Offensive) appID 4465480)
-- **Skin changer** (custom knifes, gloves, skins and graffiti via in-game chat commmands `!ws !knife !glove !spray`)
-- **PugSetup** (assign 2 captains to pick teammates or shuffle teams via in-game chat commmand `!start`)
-- **Native Votes** (post-match map votes)
-- **SourceMod** (dependency)
-- **MetaMod** (dependency)
-- **PTaH** (dependency)
+## Mods & Plugins
+* **NoLobbyReservation:** Requirement for players to be able to join.
+* **CSGOEngineFix:** Requirement for players to join from the [new CS:GO Legacy](https://store.steampowered.com/app/4465480/CounterStrikeGlobal_Offensive) (AppID 4465480).
+* **Skin Changer:** Custom knives, gloves, skins, and graffiti via in-game chat commands (`!ws`, `!knife`, `!glove`, `!spray`).
+* **PugSetup:** Assign 2 captains to pick teammates or shuffle teams via in-game chat command (`!start`).
+* **Native Votes:** Post-match map votes.
+* **SourceMod:** Dependency.
+* **MetaMod:** Dependency.
+* **PTaH:** Dependency.
 
-#### Maps
-**Competitive maps (5v5):**<br />
-- de_ancient
-- de_anubis
-- de_inferno
-- de_mirage
-- de_nuke
-- de_overpass
-- de_vertigo
-- de_tuscan
-- de_dust2
-- de_train
-- de_cache
-- cs_agency
-- cs_office
-- de_train_old
-- de_nuke_2016
-- de_dust2_old
-- de_cache_legacy
-- de_inferno_legacy
-- de_cbble_legacy
-- de_abbey
-- de_austria
-- de_royal
-- de_log
-- de_vertigo_old
-- de_nuke_legacy
-- de_castle
-- de_ruby
-- de_zoo
-- de_subzero
-- de_blackgold
-- de_tulip
-- de_santorini
-- de_mikla
-- de_resort
-- de_season
-- de_bazaar
-- cs_backalley
-- cs_insertion2
-- cs_workout
+## Maps
+<details>
+<summary><strong>Competitive Maps (5v5)</strong> <em>(Click to expand)</em></summary>
+- de_ancient<br />
+- de_anubis<br />
+- de_inferno<br />
+- de_mirage<br />
+- de_nuke<br />
+- de_overpass<br />
+- de_vertigo<br />
+- de_tuscan<br />
+- de_dust2<br />
+- de_train<br />
+- de_cache<br />
+- cs_agency<br />
+- cs_office<br />
+- de_train_old<br />
+- de_nuke_2016<br />
+- de_dust2_old<br />
+- de_cache_legacy<br />
+- de_inferno_legacy<br />
+- de_cbble_legacy<br />
+- de_abbey<br />
+- de_austria<br />
+- de_royal<br />
+- de_log<br />
+- de_vertigo_old<br />
+- de_nuke_legacy<br />
+- de_castle<br />
+- de_ruby<br />
+- de_zoo<br />
+- de_subzero<br />
+- de_blackgold<br />
+- de_tulip<br />
+- de_santorini<br />
+- de_mikla<br />
+- de_resort<br />
+- de_season<br />
+- de_bazaar<br />
+- cs_backalley<br />
+- cs_insertion2<br />
+- cs_workout<br />
+</details>
 
-**Wingman maps (2v2):**<br />
-- de_elysion
-- de_guard
-- de_pitstop
-- de_calavera
-- de_ravine
-- de_extraction_r1
-- de_hive
-- de_crete
-- de_blagai
-- de_prime
+<details>
+<summary><strong>Wingman Maps (2v2)</strong> <em>(Click to expand)</em></summary>
+- de_elysion<br />
+- de_guard<br />
+- de_pitstop<br />
+- de_calavera<br />
+- de_ravine<br />
+- de_extraction_r1<br />
+- de_hive<br />
+- de_crete<br />
+- de_blagai<br />
+- de_prime<br />
+</details>
 
-**Aim maps (1v1, 2v2, etc.):**<br />
-- aim_map
-- aim_redline
-- awp_india
-- aim_usp_a
-
+<details>
+<summary><strong>Aim Maps (1v1, 2v2, etc.)</strong> <em>(Click to expand)</em></summary>
+- aim_map<br />
+- aim_redline<br />
+- awp_india<br />
+- aim_usp_a<br />
+</details>
 
 
 ## Installation
-#### 0) Port Forwarding Availability
-Check if your internet provider allows you to port forward. If you cannot find a "port forwarding" section in your router's settings, give your internet provider a call and ask.
-I let them change from IPv6 to a static IPv4 in order to do it.
-	
-	
-#### 1) Download steamcmd & base server
-a) Download: https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip
-b) Create a folder for SteamCMD. Example: C:\steamcmd
-c) Extract the contents of the zip to the folder.
-source: https://developer.valvesoftware.com/wiki/SteamCMD
-d) Run windows cmd as admin (Win+R: `cmd` CTRL+SHIFT+ENTER)
-> `cd C:\steamcmd`
-> `steamcmd`
-> `login anonymous`
-> `app_update 740` (this is the CS:GO legacy beta branch for CS:GO legacy)
 
-#### 2) Download pre-configured settings, mods and other requirements
-All of the files (with their working versions and parameters) are collected for you to download all at once here.
-Download . Copy/place them into your server directory.
-github - https://github.com/FNScence/CSGO-Legacy-Server
+### 0. Port Forwarding Availability
+Check if your internet provider allows you to port forward. If you cannot find a "port forwarding" section in your router's settings, give your internet provider a call and ask. 
+*Note: I had them change my connection from IPv6 to a static IPv4 in order to do it.*
 
+### 1. Download SteamCMD & Base Server
+a. **Download:** Get SteamCMD from [this link](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip).
+b. **Extract:** Create a folder for SteamCMD (e.g., `C:\steamcmd`) and extract the contents of the zip into this folder. *(Source: [Valve Developer Wiki](https://developer.valvesoftware.com/wiki/SteamCMD))*
+c. **Run:** Open the Windows Command Prompt as Administrator (`Win+R`, type `cmd`, then press `Ctrl+Shift+Enter`).
+d. **Execute:** Run the following commands one by one:
+    ```cmd
+    cd C:\steamcmd
+    steamcmd
+    login anonymous
+    app_update 740
+    ```
+    *(Note: App 740 is the CS:GO Legacy beta branch for dedicated servers).*
 
-#### 3) Create a Server Login Token and edit a Launch Script
-a) Log into steam in your browser, then go to https://steamcommunity.com/dev/managegameservers
-		Towards the bottom under "Create a new game server account", at App ID enter "730" and copy that generated login token
-b) Go to your server directory "C:\steamcmd\steamapps\common\Counter-Strike Global Offensive Beta - Dedicated Server"
-		Edit start.bat via an editor of your choice (e.g. notepad++ or VSC)
-		INSERT YOUR SERVER LOGIN TOKEN which you created above
-		Save the bat file and close. You can create a shortcut to this file, if you want.
+### 2. Download Pre-Configured Settings & Mods
+All of the files (with their working versions and parameters) are collected for you to download all at once.
+1. Download the files from this GitHub repository ([Download Link](https://github.com/FNScence/CSGO-Legacy-Server/archive/refs/heads/main.zip)).
+2. Copy and place them into your new server directory (`C:\steamcmd\steamapps\common\Counter-Strike Global Offensive Beta - Dedicated Server`).
 
+### 3. Create a Server Login Token & Edit Launch Script
+1. Log into Steam in your browser, then go to the [Game Server Account Management page](https://steamcommunity.com/dev/managegameservers).
+2. Towards the bottom under **"Create a new game server account"**, enter App ID `730` and copy the generated login token.
+3. Go to your server directory: `C:\steamcmd\steamapps\common\Counter-Strike Global Offensive Beta - Dedicated Server`
+4. Edit the `start.bat` file using a text editor of your choice (e.g., Notepad++ or VS Code).
+5. **Insert your Server Login Token** where indicated.
+6. Save the `.bat` file and close it. *(Tip: You can create a desktop shortcut to this file for easy access).*
 
-####4) Download Maps & Graffiti
-To play non-default maps, you'd have to go through a tedious process of downloading workshop maps and checking their compatibility (nav-file, radar issues and crashes)<br />
+### 4. Download Maps & Graffiti
+To play non-default maps, you would normally have to go through a tedious process of downloading workshop maps and checking their compatibility (nav-file, radar issues, and crashes). Instead, use this pre-packaged folder:
 
-a) You can download all the maps I use (competitive and wingman) via this link: 
-https://drive.google.com/file/d/1TXzR00NMCwuJ4kJH5mxI8e7Kj9C-em46/view?usp=sharing
-	
-b) You need to copy/place the content of this downloaded csgo-folder inside BOTH your server and game directory
-Server directory
-	`C:\steamcmd\steamapps\common\Counter-Strike Global Offensive Beta - Dedicated Server\csgo\`
-		
-Game directory (If you're using the new standalone CS:GO Legacy)
-	`C:\Program Files (x86)\Steam\steamapps\common\csgo legacy\csgo\`
-		
-Game directory (If you're using CS2's Beta branch for CS:GO Legacy)
-	`C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\`
-		
-c) Every player joining has to download and install these maps & graffiti locally before joining
+a. Download all the maps (competitive and wingman) via [this Google Drive link](https://drive.google.com/file/d/1TXzR00NMCwuJ4kJH5mxI8e7Kj9C-em46/view?usp=sharing).
+b. Copy/place the contents of this downloaded `csgo` folder inside **BOTH** your server and game directories:
+   * **Server Directory:** `C:\steamcmd\steamapps\common\Counter-Strike Global Offensive Beta - Dedicated Server\csgo\`
+   * **Game Directory (New Standalone CS:GO Legacy):** `C:\Program Files (x86)\Steam\steamapps\common\csgo legacy\csgo\`
+   * **Game Directory (CS2 Beta Branch):** `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\`
+c. **Important:** Every player joining has to download and install these maps & graffiti locally before joining.
 
-#### 5) 	Port Forwarding
-a) Check your router settings in your browser: http://192.168.0.1/ (URL might differ depending on your provider, check the sticker on your router)
-b) Find "Port Forwarding" setting and set up multiple lines like this:
-		Port : 27015 (UDP & TCP)
-			   27020 (UDP)
-			   27005 (UDP)
-			   26900 (UDP)
-c) Windows Defender Firewall with Advanced Security
-		Create new Inbound Rules:
-		New Rule > Port > TCP + Specific Port "20715" > Allow Connection > Domain + Private + Public
-		New Rule > Port > UCP + Specific Port "27015, 27020, 27005, 26900" > Allow Connection > Domain + Private + Public
-d) Testing
-	WHILE THE SERVER IS RUNNING, go to one of these sites to test if the port forwarding worked.
-	Your IP should be fetched automatically, enter Port Number "27015" and check.
-	https://www.yougetsignal.com/tools/open-ports/
-	https://portchecker.co/
+### 5. Port Forwarding Setup
+a. **Router Settings:** <br />Check your router settings in your browser at `http://192.168.0.1/` <br />
+(URL might differ depending on your provider, check the sticker on your router).
+b. **Forward Ports:** <br />Find the "Port Forwarding" section and set up multiple rules pointing to your PC's local IP:
+   * `27015` (UDP & TCP)
+   * `27020` (UDP)
+   * `27005` (UDP)
+   * `26900` (UDP)
+c. **Windows Defender Firewall:** <br />Open *Windows Defender Firewall with Advanced Security* and create new **Inbound Rules**:
+   * *New Rule > Port > TCP > Specific Port `27015` > Allow Connection > Domain + Private + Public*
+   * *New Rule > Port > UDP > Specific Ports `27015, 27020, 27005, 26900` > Allow Connection > Domain + Private + Public*
+d. **Testing:** <br />WHILE THE SERVER IS RUNNING, go to one of these sites to test if the port forwarding worked. Your IP should be fetched automatically; enter Port Number `27015` and check.
+   * [YouGetSignal](https://www.yougetsignal.com/tools/open-ports/)
+   * [PortChecker](https://portchecker.co/)
 
-#### 6) Running the Server
-a) Start the server via the `start.bat` script we created (you can create a shortcut).
-b) The console will print your IP, through which you and other players can connect using `connect <your_IP>` in the in-game console.
+### 6. Running the Server
+a. Start the server via the `start.bat` script we created.
+b. The console will print your public IP address.
+c. You and other players can connect using `connect <your_IP>` in the in-game console.
 
 
 ## Administration
+
 #### ► Using Server Console Commands
-  Using server commands while connected to the server requires you to use the following command first:
-	`rcon_password 12345`.
-	You can change this here: `../csgo/cfg/server.cfg`.<br />
-	Every subsequent command needs to be placed after `rcon` like so: `rcon mp_restartgame 1`
-	
-#### ► Maps and Map groups
-  I created three map rotations (5v5, 2v2, 1v1), which determine which maps will be shown for voting at the end of the match.<br />
-	By default the server starts with `+mapgroup mg_comp`. You can change this in the `start.bat` file, or by using command `mapgroup mg_wingman` or `mapgroup mg_aim`.
-	Map groups can be adjusted in `../csgo/GameModes_Server.txt`.
-	You can manually change the map to any of the listed ones in `../csgo/maplist.txt` using for example `rcon changelevel de_cbble_legacy`.
-	Tip: By starting to type "changemap de_", you can use the autofill to check which maps you have installed locally.
-	
-#### ► Starting a match
-Starting a match can be done by execing the respective configs using one of these:<br />
-- Warm-up/Testing:<br />
-		`rcon exec solo`<br />
-- 5v5 competitive:<br />
-		`rcon exec esl5on5`<br />
-- Wingman 2v2:<br />
-		`rcon exec esl2on2`<br />
-- Aim map:<br />
-		`rcon exec esl1on1aml`<br />
-		`rcon exec esl2on2aml`<br />
-		`rcon exec esl1on1awp`<br />
-		`rcon exec esl2on2awp`<br />
+Using server commands while connected to the server requires you to authenticate first.
+1. Open your in-game console and type: `rcon_password 12345`
+   *(You can change this password here: `../csgo/cfg/server.cfg`)*
+2. Every subsequent command needs to be prefixed with `rcon`, like so: `rcon mp_restartgame 1`
 
-Alternatively, there is a plugin to start a competitive match via in-game chat "!start".
-Here, you can assign captains to pick teammates or shuffle teams.
-The first player to type this command will be match leader and can decide who will be captain.
+#### ► Maps and Map Groups
+I created three map rotations (5v5, 2v2, 1v1), which determine which maps will be shown for voting at the end of the match.
+* By default, the server starts with `+mapgroup mg_comp`. You can change this in the `start.bat` file, or by using the command `rcon mapgroup mg_wingman` or `rcon mapgroup mg_aim`.
+* Map groups can be adjusted in `../csgo/GameModes_Server.txt`.
+* You can manually change the map to any of the listed ones in `../csgo/maplist.txt` using, for example, `rcon changelevel de_cbble_legacy`.
+  *(Tip: By starting to type `changelevel de_` in the console, you can use autofill to check which maps you have installed locally.)*
+* When changing between gamemodes, make sure to change the map group first (e.g. `rcon mapgroup mg_wingman`), then to change the map (e.g. `rcon changelevel de_elysion`), otherwise the post-game map voting won't load properly.
 
-Tip: By starting to type `exec `, you can use the autofill to check which configs you have installed locally. Copy those listed above into your local game cfg folder to use this.
+#### ► Starting a Match
+Starting a match can be done by executing the respective configs. 
+*(Tip: Type `exec ` and use autofill to check installed configs and insert prefix `rcon` last. Copy these to your local game cfg folder to use this.)*
 
-## Useful configs and commands
-A) Recommended launch options
-	In Steam > (right-click CS:GO) > Properties > General:
-	`-novid -console -tickrate 128 +exec autoexec`
+* **Warm-up/Testing:** `rcon exec solo`
+* **5v5 Competitive:** `rcon exec esl5on5`
+* **Wingman 2v2:** `rcon exec esl2on2`
+* **Aim Map (1v1/2v2):**
+  `rcon exec esl1on1aml`
+  `rcon exec esl1on1awp`
+  `rcon exec esl2on2aml`
+  `rcon exec esl2on2awp`
 
-B) Config with recommended binds
-At this path `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`, copy any `.cfg`-file and rename it to `autoexec.cfg`. Then edit:
-`autoexec.cfg`:
-```
+**Alternative via Plugin:** There is a plugin to start a competitive match via the in-game chat command `!start`. Here, you can assign captains to pick teammates or shuffle teams. The first player to type this command becomes the match leader and can decide who will be captain.
+
+
+## Useful Configs and Commands
+
+#### A) Recommended Launch Options
+In Steam > Right-click CS:GO > Properties > General, add the following to your launch options:<br />
+`-novid -console -tickrate 128 +exec autoexec`
+
+#### B) Config with Recommended Settings & Binds
+Navigate to `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`. Copy any existing `.cfg` file, rename it to `autoexec.cfg`, open it in a text editor, and replace its contents with:
+
+```cfg
 // ========== CSGO Jumpthrow - Binds ==========
 alias "+jumpthrow" "+jump;-attack; -attack2"
 alias "-jumpthrow" "-jump"
@@ -227,7 +222,7 @@ bind mouse4 +spray
 bind 6 "say /sprays"
 bind 7 "say !ws"
 
-cl_color 0						// ◄ Set prefered player color: 0 = yellow, 1 = purple, 2 = green, 3 = blue, 4 = orange
+cl_color 0						// ◄ Set prefered player color: 0=yellow, 1=purple, 2=green, 3=blue, 4=orange
 
 // ========== QoL ==========
 cl_use_opens_buy_menu 0
@@ -283,7 +278,8 @@ fps_max_menu 400
 fps_max 999
 ```
 
+
 ## Known Issues
-- On some maps, specifically the ones with multiple versions installed (e.g. cbble, train, nuke, ...), the radar will have a black background.
-- If you get more than 1000 FPS, use `fps_max 999` in order to avoid heavy movement glitches.
-- For some users the game might crash when loading into the map `awp_india`. If you experience this, start the server on that map (by changing the `start.bat` file)
+* **Radar Backgrounds:** On some maps, specifically those with multiple versions installed (e.g., `cbble`, `train`, `nuke`), the radar will display a black background.
+* **Movement Glitches:** If you get more than 1000 FPS, set `fps_max 999` in your console to avoid heavy movement glitches.
+* **Map Crashes (`awp_india`):** For some users, the game might crash when loading into the map `awp_india`. If you experience this, try starting the server directly on that map by changing it in your `start.bat` file.
