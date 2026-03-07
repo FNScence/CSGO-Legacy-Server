@@ -17,6 +17,12 @@ Players will be able to join from either the new [standalone CS:GO Legacy branch
 
 
 ## Screenshots
+![1v1 on aim_redline](https://github.com/user-attachments/assets/42360be1-e400-42a6-97f9-4661497eb484)
+↑ Use any skin, unlimited graffiti and play your favorite maps of the CS:GO era. Silenced weapons are supported even without inventory. 
+
+![1v1 on aim_redline](https://github.com/user-attachments/assets/3ef7730f-5a7e-4bc1-be78-004e18339e31)
+↑ Challenge your friend on aim_redline like it's 2015 again
+
 
 
 ## Mods & Plugins
