@@ -91,6 +91,75 @@ If any questions remain, join my discord and feel free to ask in the `#help`-cha
 
 
 ## Installation
+#### 0) Port Forwarding Availability
+Check if your internet provider allows you to port forward. If you cannot find a "port forwarding" section in your router's settings, give your internet provider a call and ask.
+I let them change from IPv6 to a static IPv4 in order to do it.
+	
+	
+#### 1) Download steamcmd & base server
+a) Download: https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip
+b) Create a folder for SteamCMD. Example: C:\steamcmd
+c) Extract the contents of the zip to the folder.
+source: https://developer.valvesoftware.com/wiki/SteamCMD
+d) Run windows cmd as admin (Win+R: `cmd` CTRL+SHIFT+ENTER)
+> `cd C:\steamcmd`
+> `steamcmd`
+> `login anonymous`
+> `app_update 740` (this is the CS:GO legacy beta branch for CS:GO legacy)
+
+#### 2) Download pre-configured settings, mods and other requirements
+All of the files (with their working versions and parameters) are collected for you to download all at once here.
+Download . Copy/place them into your server directory.
+github - https://github.com/FNScence/CSGO-Legacy-Server
+
+
+#### 3) Create a Server Login Token and edit a Launch Script
+a) Log into steam in your browser, then go to https://steamcommunity.com/dev/managegameservers
+		Towards the bottom under "Create a new game server account", at App ID enter "730" and copy that generated login token
+b) Go to your server directory "C:\steamcmd\steamapps\common\Counter-Strike Global Offensive Beta - Dedicated Server"
+		Edit start.bat via an editor of your choice (e.g. notepad++ or VSC)
+		INSERT YOUR SERVER LOGIN TOKEN which you created above
+		Save the bat file and close. You can create a shortcut to this file, if you want.
+
+
+####4) Download Maps & Graffiti
+To play non-default maps, you'd have to go through a tedious process of downloading workshop maps and checking their compatibility (nav-file, radar issues and crashes)<br />
+
+a) You can download all the maps I use (competitive and wingman) via this link: 
+https://drive.google.com/file/d/1TXzR00NMCwuJ4kJH5mxI8e7Kj9C-em46/view?usp=sharing
+	
+b) You need to copy/place the content of this downloaded csgo-folder inside BOTH your server and game directory
+Server directory
+	`C:\steamcmd\steamapps\common\Counter-Strike Global Offensive Beta - Dedicated Server\csgo\`
+		
+Game directory (If you're using the new standalone CS:GO Legacy)
+	`C:\Program Files (x86)\Steam\steamapps\common\csgo legacy\csgo\`
+		
+Game directory (If you're using CS2's Beta branch for CS:GO Legacy)
+	`C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\`
+		
+c) Every player joining has to download and install these maps & graffiti locally before joining
+
+#### 5) 	Port Forwarding
+a) Check your router settings in your browser: http://192.168.0.1/ (URL might differ depending on your provider, check the sticker on your router)
+b) Find "Port Forwarding" setting and set up multiple lines like this:
+		Port : 27015 (UDP & TCP)
+			   27020 (UDP)
+			   27005 (UDP)
+			   26900 (UDP)
+c) Windows Defender Firewall with Advanced Security
+		Create new Inbound Rules:
+		New Rule > Port > TCP + Specific Port "20715" > Allow Connection > Domain + Private + Public
+		New Rule > Port > UCP + Specific Port "27015, 27020, 27005, 26900" > Allow Connection > Domain + Private + Public
+d) Testing
+	WHILE THE SERVER IS RUNNING, go to one of these sites to test if the port forwarding worked.
+	Your IP should be fetched automatically, enter Port Number "27015" and check.
+	https://www.yougetsignal.com/tools/open-ports/
+	https://portchecker.co/
+
+#### 6) Running the Server
+a) Start the server via the `start.bat` script we created (you can create a shortcut).
+b) The console will print your IP, through which you and other players can connect using `connect <your_IP>` in the in-game console.
 
 
 ## Administration
@@ -127,6 +196,91 @@ The first player to type this command will be match leader and can decide who wi
 
 Tip: By starting to type `exec `, you can use the autofill to check which configs you have installed locally. Copy those listed above into your local game cfg folder to use this.
 
+## Useful configs and commands
+A) Recommended launch options
+	In Steam > (right-click CS:GO) > Properties > General:
+	`-novid -console -tickrate 128 +exec autoexec`
+
+B) Config with recommended binds
+At this path `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`, copy any `.cfg`-file and rename it to `autoexec.cfg`. Then edit:
+`autoexec.cfg`:
+```
+// ========== CSGO Jumpthrow - Binds ==========
+alias "+jumpthrow" "+jump;-attack; -attack2"
+alias "-jumpthrow" "-jump"
+bind "space" "+jumpthrow"			// ◄ KEY customizable
+
+alias "+jumpthrow2" "+forward; +jump; -attack; -attack2"
+alias "-jumpthrow2" "-jump; -forward"
+bind "n" "+jumpthrow2"				// ◄ KEY customizable
+
+// ========== Network settings ==========
+rate 128000
+cl_updaterate 128
+cl_cmdrate 128
+cl_interp 0
+cl_interp_ratio 1
+
+// ========== Skins & Graffiti - Binds ==========
+bind mouse4 +spray
+bind 6 "say /sprays"
+bind 7 "say !ws"
+
+cl_color 0						// ◄ Set prefered player color: 0 = yellow, 1 = purple, 2 = green, 3 = blue, 4 = orange
+
+// ========== QoL ==========
+cl_use_opens_buy_menu 0
+cl_autowepswitch "0"
+cl_disablefreezecam 1
+
+// ========== Sound - Settings ==========
+snd_mixahead "0.05"
+snd_headphone_pan_exponent "2"
+snd_tensecondwarning_volume "0.1"
+
+// ========== Radar zoom-out & cleardecals (hold) ==========
+alias "+mz" "cl_radar_scale 0.3; cl_crosshair_sniper_width 1; cl_radar_always_centered 0; cl_crosshaircolor_r 255; cl_crosshaircolor_g 255; cl_crosshaircolor_b 255; +cl_show_team_equipment"
+alias "-mz" "cl_radar_scale 0.5; cl_crosshair_sniper_width 2; cl_radar_always_centered 1; cl_crosshaircolor_r 255; cl_crosshaircolor_g 255; cl_crosshaircolor_b 0; -cl_show_team_equipment"
+bind "alt" "+mz; r_cleardecals"		// ◄ KEY customizable
+
+// ========== Show netgraph when checking scoreboard ==========
+net_graph "1"
+net_graphheight "9999"
+net_graphproportionalfont "0"
+alias "+scorenet" "+showscores; net_graphheight 0"
+alias "-scorenet" "-showscores; net_graphheight 9999"
+bind "tab" "+scorenet"
+
+// ========== HUD & FPS settings ==========
+cl_showloadout 1
+cl_hud_background_alpha 0.5
+cl_hud_bomb_under_radar 1
+cl_hud_healthammo_style 0
+cl_hud_playercount_pos 0
+cl_hud_playercount_showcount 0
+cl_teamid_overhead_mode 1
+cl_show_observer_crosshair 2
+cl_obs_interp_enable 0
+cl_showhelp "0"
+
+cl_lagcompensation "1"
+cl_predictweapons "1"
+cl_resend "6"
+cl_timeout "9999999"
+r_eyegloss "0"
+r_eyemove "0"
+r_eyeshift_x "0"
+r_eyeshift_y "0"
+r_eyeshift_z "0"
+r_eyesize "0"
+r_dynamic 1
+muzzleflash_light "1"
+mat_queue_mode "2"
+cl_threaded_bone_setup 1
+
+fps_max_menu 400
+fps_max 999
+```
 
 ## Known Issues
 - On some maps, specifically the ones with multiple versions installed (e.g. cbble, train, nuke, ...), the radar will have a black background.
