@@ -1,0 +1,235 @@
+//Translation Phrases for the UMC Admin Menu module.
+
+"Phrases"
+{
+	"AM Stop Vote"
+	{
+		"es" "Anular Votación Actual"
+	}
+
+	"AM Start Vote"
+	{
+		"es" "Crear Votación Mapa"
+	}
+
+	"AM Vote Type"
+	{
+		"es" "Seleccionar Tipo de Votación"
+	}
+
+	"Maps"
+	{
+		"es" "Mapas"
+	}
+
+	"Groups"
+	{
+		"es" "Grupos"
+	}
+
+	"Tiered"
+	{
+		"es" "Nivelada"
+	}
+
+	"AM Populate Vote"
+	{
+		"es" "Añadir Mapas a la Votación"
+	}
+
+	"Stop Adding Maps"
+	{
+		"es" "Dejar de Añadir Mapas"
+	}
+
+	"AM Vote Settings"
+	{
+		"es" "Ajustes de Votación"
+	}
+
+	"AM-VS Defaults"
+	{
+		"es" "Usar por Defecto"
+	}
+
+	"Manually Choose"
+	{
+		"es" "Elegir Manualmente"
+	}
+
+	"AM Scramble Menu"
+	{
+		"es" "¿Mezclar el Menú de Voto?"
+	}
+
+	"Default Yes"
+	{
+		"es" "Sí (por defecto)"
+	}
+
+	"Default No"
+	{
+		"es" "No (por defecto)"
+	}
+
+	"AM Threshold Menu"
+	{
+		"es" "Establecer Umbral de Votación"
+	}
+
+	"AM Threshold Menu Message 1"
+	{
+		"es" "Escribe en el chat el umbral que te"
+	}
+
+	"AM Threshold Menu Message 2"
+	{
+		"es" "gustaría establecer para la votación [0 a 100]."
+	}
+
+	"Default"
+	{
+		"es" "Por Defecto"
+	}
+
+	"Previously Entered"
+	{
+		"es" "anterior elegido"
+	}
+
+	"AM Fail Action Menu"
+	{
+		"es" "Establecer Acción de Fallo"
+	}
+
+	"Do Nothing"
+	{
+		"es" "No Hacer Nada"
+	}
+
+	"Perform Runoff Vote"
+	{
+		"es" "Votación 2ª Ronda"
+	}
+
+	"Default Do Nothing"
+	{
+		"es" "Ninguna (por defecto)"
+	}
+
+	"Default Perform Runoff Vote"
+	{
+		"es" "2ª Ronda (por defecto)"
+	}
+
+	"AM Max Runoff Menu"
+	{
+		"es" "Establecer Número Máximo\nde Rondas de Desempate"
+	}
+
+	"AM Max Runoff Menu Message 1"
+	{
+		"es" "Escribe en el chat el máximo que deseas"
+	}
+
+	"AM Max Runoff Menu Message 2"
+	{
+		"es" "asignar a las rondas de votación de desempate (>= 0)."
+	}
+
+	"AM Max Runoff Menu Message 3"
+	{
+		//Note to translators: keep the leading space in this phrase.
+		"es" " 0 = ilimitado"
+	}
+
+	"AM Runoff Fail Action Menu"
+	{
+		"es" "Establecer Acción de Fallo para\nla Votación de Segunda Ronda"
+	}
+
+	"Accept Winner"
+	{
+		"es" "Aceptar Ganador"
+	}
+
+	"Default Accept Winner"
+	{
+		"es" "Aceptar Ganador (def.)"
+	}
+
+	"AM Extend Menu"
+	{
+		"es" "¿Añadir Opción de Extender Mapa?"
+	}
+
+	"AM Don't Change Menu"
+	{
+		"es" "¿Añadir Opción de No Cambiar Mapa?"
+	}
+
+	"AM Admin Flag Menu"
+	{
+		"es" "Hacer la votación disponible para..."
+	}
+
+	"Everyone"
+	{
+		"es" "Todos"
+	}
+
+	"Admins Only"
+	{
+		"es" "Solo Administradores"
+	}
+
+	"AM Change When Menu"
+	{
+		"es" "¿Cuándo Cambiar Mapa?"
+	}
+
+	"Now"
+	{
+		"es" "Al instante"
+	}
+
+	"End of Round"
+	{
+		"es" "Al final de esta Ronda"
+	}
+
+	"End of Map"
+	{
+		"es" "Al final del Mapa"
+	}
+
+	"Select A Map"
+	{
+		"es" "Seleccione un Mapa"
+	}
+
+	"Select A Group"
+	{
+		"es" "Seleccione un Grupo"
+	}
+
+	"Auto Select"
+	{
+		"es" "Selección Automática"
+	}
+
+	"Manual Select"
+	{
+		"es" "Selección Manual"
+	}
+
+	"AM Change Map"
+	{
+		"es" "Cambiar Mapa"
+	}
+
+	"AM Set Next Map"
+	{
+		"es" "Fijar Próximo Mapa"
+	}
+}
