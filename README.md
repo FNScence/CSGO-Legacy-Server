@@ -3,6 +3,9 @@ Following this guide allows you to locally host a private CS:GO Legacy server on
 Players will be able to join from either the new [standalone CS:GO Legacy](https://store.steampowered.com/app/4465480/CounterStrikeGlobal_Offensive) or CS2's CS:GO Legacy beta branch.
 Gathering all the requirements, dependencies and dealing with compatibility issues is very time consuming, so I collected a base set-up of mods (skins, graffiti, map votes, pug setup with captain roles, etc.) as well as many older maps (e.g. de_cbble_legacy, de_train_2013, de_nuke_2016) as well as operation and wingman maps that have been part of the game once.
 
+If any questions remain, join my discord and feel free to ask in the `#help`-channel:
+> Join the **CS AFAP DISCORD SERVER** [HERE](https://discord.gg/FdRTp3XaCG).
+
 ## ReadMe Chapters
 - [Screenshots](https://github.com/FNScence/CSGO-Legacy-Server/tree/main?tab=readme-ov-file#screenshots)
 - [Mods & Maps](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#mods--maps)
