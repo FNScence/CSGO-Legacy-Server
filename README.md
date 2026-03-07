@@ -7,11 +7,11 @@ Players will be able to join from either the new [standalone CS:GO Legacy branch
 > **Need help?** > Join the **CS AFAP DISCORD SERVER** [HERE](https://discord.gg/FdRTp3XaCG) and feel free to ask in the `#help` channel.
 
 ## Table of Contents
-* [Mods & Plugins]()
+* [Mods & Plugins](https://github.com/FNScence/CSGO-Legacy-Server/blob/main/README.md#mods--plugins)
 * [Screenshots](https://github.com/FNScence/CSGO-Legacy-Server/tree/main?tab=readme-ov-file#screenshots)
-* [Maps](#maps)
-* [Installation](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#installation)
-* [Administration](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#administration)
+* [Maps](https://github.com/FNScence/CSGO-Legacy-Server/blob/main/README.md#maps)
+* [Installation](https://github.com/FNScence/CSGO-Legacy-Server/blob/main/README.md#installation)
+* [Administration](https://github.com/FNScence/CSGO-Legacy-Server/blob/main/README.md#administration)
 * [Useful configs and commands](https://github.com/FNScence/CSGO-Legacy-Server/blob/main/README.md#useful-configs-and-commands)
 * [Known Issues](https://github.com/FNScence/CSGO-Legacy-Server?tab=readme-ov-file#known-issues)
 
