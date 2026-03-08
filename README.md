@@ -4,7 +4,16 @@ Following this guide allows you to locally host a private CS:GO Legacy server on
 
 Players will be able to join from either the new [standalone CS:GO Legacy branch](https://store.steampowered.com/app/4465480/CounterStrikeGlobal_Offensive) or CS2's CS:GO Legacy beta branch. Gathering all the requirements, dependencies, and dealing with compatibility issues is very time-consuming, so I collected a base set-up of mods (skins, graffiti, map votes, PUG setup with captain roles, etc.) as well as many older maps (e.g., `de_cbble_legacy`, `de_train_2013`, `de_nuke_2016`) and operation/wingman maps that were once part of the game.
 
-> **Need help?** > Join the **CS AFAP DISCORD SERVER** [HERE](https://discord.gg/FdRTp3XaCG) and feel free to ask in the `#help` channel.
+📁 **Project Files:**<br />
+Pre-configured server setup | [Download](https://github.com/FNScence/CSGO-Legacy-Server/archive/refs/heads/main.zip).<br />
+Map & graffiti | [Download](https://drive.google.com/file/d/1TXzR00NMCwuJ4kJH5mxI8e7Kj9C-em46/view).
+
+💬 **Need help?**<br />
+Join the [CS AFAP Discord Server](https://discord.gg/FdRTp3XaCG) and feel free to ask in the `#help` channel!
+
+🎓 **Forgot your CS:GO utility lineups?**<br />
+My [CS:GO As Fast As Possible](https://youtube.com/playlist?list=PLC8TAY9WG-m5hBqQLzuUInpf6DkeWCh9i&si=TiZnL7NnH4-41JQH) video series will be a nice refresher.
+
 
 ## Table of Contents
 * [Mods & Plugins](https://github.com/FNScence/CSGO-Legacy-Server/blob/main/README.md#mods--plugins)
