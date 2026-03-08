@@ -6,7 +6,7 @@ Players will be able to join from either the new [standalone CS:GO Legacy branch
 
 📁 **Project Files:**<br />
 Pre-configured server setup | [Download](https://github.com/FNScence/CSGO-Legacy-Server/archive/refs/heads/main.zip).<br />
-Map & graffiti | [Download](https://drive.google.com/file/d/1TXzR00NMCwuJ4kJH5mxI8e7Kj9C-em46/view).
+Maps & graffiti | [Download](https://drive.google.com/file/d/1TXzR00NMCwuJ4kJH5mxI8e7Kj9C-em46/view).
 
 💬 **Need help?**<br />
 Join the [CS AFAP Discord Server](https://discord.gg/FdRTp3XaCG) and feel free to ask in the `#help` channel!
